@@ -14,7 +14,7 @@ body {
     font-size: 18px;
   }
   
-  /* Estilos para el navbar */
+
   .navbar {
     background-color: #262626;
     display: flex;
@@ -37,7 +37,7 @@ body {
     margin-right: 20px;
   }
   
-  /* Estilos para los enlaces en el navbar */
+
   .navbar-left a {
     text-decoration: none;
     color: #f0f0f0;
@@ -61,7 +61,7 @@ body {
     margin-right: 20px;
   }
   
-  /* Estilos para los enlaces en el navbar */
+
   .navbar-right a {
     text-decoration: none;
     color: #f0f0f0;
@@ -69,7 +69,6 @@ body {
     transition: color 0.3s ease;
   }
   
-  /* Estilos para hover (cambio de color al pasar el mouse) */
   .navbar-right a:hover {
     color: #49FF20;
   }
@@ -95,27 +94,24 @@ body {
 
 .topics-container {
     text-align: center;
-    margin-top: 2%; /* Ajustado el margen superior para pantallas más pequeñas */
+    margin-top: 2%;
   }
   
-  /* Estilos para el título "Temas a tratar" */
   .topics-container h2 {
-    font-size: 24px; /* Tamaño de fuente fijo para pantallas más pequeñas */
-    margin-bottom: 2%; /* Ajustado el margen inferior para pantallas más pequeñas */
+    font-size: 24px;
+    margin-bottom: 2%;
     color: #49FF20;
   }
   .topics-container h1 {
     color: salmon;
   }
   
-  /* Estilos para el contenedor de los rectángulos de temas */
   .topics {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap;
     justify-content: center;
   }
   
-  /* Estilos para los rectángulos de temas */
   .topic {
     background-color: #262626;
     padding: 10px;
@@ -127,7 +123,6 @@ body {
     height: 470px;
   }
   
-  /* Establece un margen derecho para los rectángulos para separarlos */
   .topic + .topic {
     margin-left: 20px;
   }
@@ -139,23 +134,54 @@ body {
     border-radius: 20px;
 }
 
+@keyframes heartbeat {
+  0%, 100% { background-color: rgb(170, 0, 0); }
+  80% { background-color: rgb(80, 0, 0); }
+}
+
+@keyframes fadeToGrey {
+  0% { background-color: rgb(170, 0, 0); }
+  100% { background-color: #262626; }
+}
+
 .topic2 {
-    background-color: #262626;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 20%;
-    height: 100%;
-    width: 250px;
-    height: 180px;
-  }
+  background-color: #262626;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 470px;
+  transition: background-color 2s ease-in-out, transform 1s ease-in-out;
+}
+
+.topic2:hover {
+  background-color: rgb(158, 0, 0);
+  transform: scale(1.1);
+  animation: heartbeat 6s 2s infinite;
+}
+
+.topic2:not(:hover) {
+  animation: fadeToGrey 2s;
+}
+
+.topic2 img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 .subrayado{
   text-decoration: underline 3px rgb(184, 16, 16);
-  }
+}
 
-  .topic2 h2.LuisanaMiAmor {
-    font-size: 24px;
-    margin-bottom: 2%;
-    color: rgb(184, 16, 16); 
+.topic2 h2.LuisanaMiAmor {
+  font-size: 24px;
+  margin-bottom: 2%;
+  color: rgb(184, 16, 16); 
+  transition: color 2s ease-in-out;
+}
+
+.topic2:hover h2.LuisanaMiAmor {
+  color: rgb(0, 0, 90);
 }

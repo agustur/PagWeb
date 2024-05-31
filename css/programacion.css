@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
@@ -15,7 +15,6 @@ body li{
   font-size: 18px;
 }
 
-/* Estilos para el navbar */
 .navbar {
   background-color: #262626;
   display: flex;
@@ -38,7 +37,6 @@ body li{
   margin-right: 20px;
 }
 
-/* Estilos para los enlaces en el navbar */
 .navbar-left a {
   text-decoration: none;
   color: #f0f0f0;
@@ -62,7 +60,6 @@ body li{
   margin-right: 20px;
 }
 
-/* Estilos para los enlaces en el navbar */
 .navbar-right a {
   text-decoration: none;
   color: #f0f0f0;
@@ -70,7 +67,6 @@ body li{
   transition: color 0.3s ease;
 }
 
-/* Estilos para hover (cambio de color al pasar el mouse) */
 .navbar-right a:hover {
   color: #49FF20;
 }
@@ -82,14 +78,14 @@ body li{
 
 .container {
   display: flex;
-  flex-direction: row; /* Cambia la dirección a horizontal */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   height: 100%;
 }
 
-/* Estilos para la imagen en el lado izquierdo */
+
 .left-image img {
   width: 100%;
   max-width: 100%;
@@ -102,7 +98,7 @@ body li{
 }
 
 .left-image {
-  flex: 60%; /* El 60% del ancho del container */
+  flex: 60%;
   height: auto;
   display: flex;
   align-items: center;
@@ -110,7 +106,7 @@ body li{
 }
 
 .content {
-  flex: 40%; /* El 40% del ancho del container */
+  flex: 40%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -121,7 +117,7 @@ body li{
   height: 100%;
 }
 
-/* Estilos para el texto alineado a la izquierda */
+
 .left-aligned-text {
   display: flex;
   flex-direction: column;
@@ -131,7 +127,7 @@ body li{
   height: 100%;
 }
 
-/* Estilos para el título "Programación" */
+
 .left-aligned-text h2 {
   font-size: 5vw;
   color: #49FF20;
@@ -216,28 +212,28 @@ body li{
   content: counter(programming-counter) ".";
   font-weight: bold;
   margin-right: 10px;
-  color: gold; /* Color para el número 1 */
+  color: gold;
 }
 
 .top-tier li:nth-child(2)::before {
   content: counter(programming-counter) ".";
   font-weight: bold;
   margin-right: 10px;
-  color: silver; /* Color para el número 2 */
+  color: silver;
 }
 
 .top-tier li:nth-child(3)::before {
   content: counter(programming-counter) ".";
   font-weight: bold;
   margin-right: 10px;
-  color: #cd7f32; /* Color para el número 3 */
+  color: #cd7f32;
 }
 
 .top-tier li:nth-child(n + 4)::before {
   content: counter(programming-counter) ".";
   font-weight: bold;
   margin-right: 10px;
-  color: #5c85ff; /* Color para los números 4 y siguientes */
+  color: #5c85ff;
 }
 
 
@@ -259,9 +255,6 @@ body li{
 .salary-amount {
   margin-left: 10px;
 }
-
-
-/* Estilos para la sección "La Demanda de Programadores en Argentina" *//* Estilos para la sección "La Demanda de Programadores en Argentina" */
 
 .section-title {
   font-size: 24px;
@@ -297,7 +290,6 @@ body li{
   left: -20px;
 }
 
-/* Estilos para el bloque de código dentro de la sección */
 .code-block {
   background-color: #181818;
   border-radius: 10px;
@@ -307,19 +299,16 @@ body li{
   margin: 20px 0;
 }
 
-/* Estilos para los párrafos y enlaces dentro del bloque de código */
 .code-block p, .code-block a {
   font-size: 16px;
   color: #f0f0f0;
 }
 
-/* Estilos para los enlaces dentro del bloque de código */
 .code-block a {
   text-decoration: underline;
   color: #49FF20;
 }
 
-/* Estilos para los títulos de bloques de código */
 .code-block h2 {
   font-size: 20px;
   color: #49FF20;
@@ -375,7 +364,6 @@ body li{
   position: relative;
 }
 
-/* Estilos para el bloque de código dentro de la sección */
 .code-block {
   background-color: #181818;
   border-radius: 10px;
@@ -385,19 +373,16 @@ body li{
   margin: 20px 0;
 }
 
-/* Estilos para los párrafos y enlaces dentro del bloque de código */
 .code-block p, .code-block a {
   font-size: 16px;
   color: #f0f0f0;
 }
 
-/* Estilos para los enlaces dentro del bloque de código */
 .code-block a {
   text-decoration: underline;
   color: #49FF20;
 }
 
-/* Estilos para los títulos de bloques de código */
 .code-block h2 {
   font-size: 20px;
   color: #49FF20;
@@ -407,9 +392,6 @@ body li{
 .section strong {
   color: darkkhaki;
 }
-
-
-
 
 .card {
   background-color: #fff;
@@ -421,7 +403,6 @@ body li{
   width: 100%;
 }
 
-/* Estilos para las tarjetas */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -454,7 +435,6 @@ body li{
   font-size: 18px;
 }
 
-/* Agrega estos estilos al CSS */
 .slideshow-container {
   width: 100%;
   overflow: hidden;
@@ -523,16 +503,16 @@ body li{
 
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; /* Cambia la dirección a vertical en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .left-image {
-    flex: 100%; /* Toma el ancho completo en pantallas pequeñas */
-    border-bottom-right-radius: 20px; /* Añade bordes redondeados en la parte inferior */
+    flex: 100%;
+    border-bottom-right-radius: 20px;
   }
 
   .content {
-    flex: 100%; /* Toma el ancho completo en pantallas pequeñas */
+    flex: 100%;
   }
 }
 
